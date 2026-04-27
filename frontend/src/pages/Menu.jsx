@@ -67,15 +67,22 @@ export default function Menu() {
             Abierto
           </span>
         </div>
-        <button
-          onClick={() => cart.setOpen(true)}
-          data-testid="open-cart-btn"
-          className="absolute bottom-4 right-4 bg-[#16A34A] hover:bg-[#15803D] text-white rounded-full px-5 py-3 shadow-2xl flex items-center gap-2 font-bold transition-all hover:scale-105"
-        >
-          <ShoppingCart size={18} />
-          {cart.count > 0 && <span className="bg-white text-[#16A34A] rounded-full px-2 text-sm">{cart.count}</span>}
-        </button>
       </div>
+
+      {/* Floating cart button - always visible */}
+      <button
+        onClick={() => cart.setOpen(true)}
+        data-testid="open-cart-btn"
+        className="fixed bottom-6 right-6 z-40 bg-[#16A34A] hover:bg-[#15803D] text-white rounded-full h-16 w-16 shadow-2xl flex items-center justify-center font-bold transition-all hover:scale-110 active:scale-95"
+        aria-label="Ver carrito"
+      >
+        <ShoppingCart size={26} />
+        {cart.count > 0 && (
+          <span className="absolute -top-1 -right-1 bg-[#D94814] text-white rounded-full min-w-[24px] h-6 px-1.5 text-xs font-black flex items-center justify-center border-2 border-white" data-testid="cart-count-badge">
+            {cart.count}
+          </span>
+        )}
+      </button>
 
       {/* Logo + brand card */}
       <div className="max-w-3xl mx-auto px-4 -mt-12 relative z-10">
