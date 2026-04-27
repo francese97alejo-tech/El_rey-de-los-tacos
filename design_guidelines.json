@@ -1,0 +1,81 @@
+{
+  "theme": "light",
+  "archetype": "1 (Organic & Earthy)",
+  "branding": {
+    "name": "El Rey de los Tacos",
+    "vibe": "Warm, appetizing, vibrant, street-food-meets-regal",
+    "language": "es-AR"
+  },
+  "colors": {
+    "background": "#FDFBF7",
+    "surface": "#FFFFFF",
+    "primary": "#D94814",
+    "secondary": "#F59E0B",
+    "accent_green": "#16A34A",
+    "text": {
+      "main": "#1C1917",
+      "muted": "#78716C",
+      "inverse": "#FFFFFF"
+    },
+    "border": "#E7E5E4"
+  },
+  "typography": {
+    "heading_font": "Outfit, system-ui, sans-serif",
+    "body_font": "Manrope, system-ui, sans-serif",
+    "rules": {
+      "h1": "text-4xl sm:text-5xl tracking-tight font-bold text-[#1C1917]",
+      "h2": "text-2xl sm:text-3xl tracking-tight font-semibold text-[#1C1917]",
+      "h3": "text-xl font-bold text-[#1C1917]",
+      "body": "text-base text-[#57534E] leading-relaxed",
+      "labels": "text-xs tracking-[0.1em] uppercase font-bold text-[#78716C]"
+    }
+  },
+  "spacing_and_layout": {
+    "container": "max-w-md mx-auto sm:max-w-2xl lg:max-w-5xl px-4 sm:px-6",
+    "section_gap": "py-8 md:py-16",
+    "element_gap": "gap-4 sm:gap-6",
+    "border_radius": {
+      "card": "rounded-3xl",
+      "button": "rounded-full",
+      "badge": "rounded-full",
+      "input": "rounded-2xl"
+    }
+  },
+  "components": {
+    "cards": {
+      "style": "bg-white rounded-3xl shadow-[0_2px_8px_rgba(0,0,0,0.04)] border border-[#E7E5E4]/50 overflow-hidden hover:shadow-[0_8px_24px_rgba(0,0,0,0.08)] transition-all duration-300",
+      "image": "aspect-video w-full object-cover"
+    },
+    "buttons": {
+      "primary": "bg-[#D94814] text-white hover:bg-[#B9380E] rounded-full px-6 py-3 font-semibold transition-colors flex items-center justify-center gap-2 shadow-sm",
+      "secondary": "bg-[#FDFBF7] text-[#1C1917] border border-[#E7E5E4] hover:bg-[#F5F5F4] rounded-full px-6 py-3 font-semibold transition-colors",
+      "whatsapp": "bg-[#16A34A] text-white hover:bg-[#15803D] rounded-full px-6 py-3 font-semibold transition-colors flex items-center justify-center gap-2 shadow-md",
+      "cart_action": "bg-[#16A34A] text-white hover:bg-[#15803D] rounded-full font-bold transition-all w-full py-4 text-lg shadow-lg"
+    },
+    "inputs": {
+      "style": "w-full rounded-2xl border border-[#E7E5E4] bg-white px-4 py-3.5 focus:outline-none focus:ring-2 focus:ring-[#D94814]/20 focus:border-[#D94814] text-[#1C1917] transition-all"
+    }
+  },
+  "specific_instructions": {
+    "cart": "CRITICAL: The shopping cart UI MUST be heavily themed in GREEN (#16A34A). Use this green for the checkout button, total highlights, and cart icons. Include radio/select options for 'Retiro en local / Envío a domicilio' and 'Efectivo / Transferencia'.",
+    "sauce_selection": "When adding a product categorized as 'Tacos' to the cart, a modal MUST appear requiring the user to select exactly 2 out of 7 sauces. The UI should use checkboxes. The 'Agregar' button must be disabled until exactly 2 are selected.",
+    "admin_dashboard": "Clean, high-contrast table layout for CRUD operations (Categories, Products, Sauces). Sidebar navigation.",
+    "hardcoded_auth": "Implement admin login checking for username 'matiasfrancese' and password 'matias123'.",
+    "whatsapp_integration": "The franchise inquiry button in the footer and the cart checkout button must construct a WhatsApp API link (https://wa.me/1155644915) with pre-filled messages summarizing the order.",
+    "testing": "All interactive elements must have data-testid attributes (e.g., data-testid='add-to-cart-btn', data-testid='checkout-whatsapp-btn').",
+    "qr_share": "Include a QR code generator in the UI (perhaps in a 'Share' modal or footer) that links to the current site URL."
+  },
+  "icons": {
+    "library": "lucide-react",
+    "usage": "Use prominent icons for Cart, WhatsApp (Phone/Message), Info, Edit, Trash, Plus, Minus, Check."
+  },
+  "media": {
+    "logo_placeholder": "https://images.unsplash.com/photo-1771308354374-3d9ad8970483?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwxfHxkZWxpY2lvdXMlMjBzdHJlZXQlMjB0YWNvc3xlbnwwfHx8fDE3NzcyNTA2MTh8MA&ixlib=rb-4.1.0&q=85",
+    "hero_background": "https://images.pexels.com/photos/6400020/pexels-photo-6400020.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+    "product_placeholders": {
+      "tacos": "https://images.unsplash.com/photo-1768716697797-35dffd4b27f7?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwyfHxkZWxpY2lvdXMlMjBzdHJlZXQlMjB0YWNvc3xlbnwwfHx8fDE3NzcyNTA2MTh8MA&ixlib=rb-4.1.0&q=85",
+      "postres": "https://images.pexels.com/photos/29908902/pexels-photo-29908902.jpeg?auto=compress&cs=tinysrgb&dpr=2&h=650&w=940",
+      "corndogs": "https://images.unsplash.com/photo-1768086253172-f4bfc60cf88d?crop=entropy&cs=srgb&fm=jpg&ixid=M3w4NjY2NjV8MHwxfHNlYXJjaHwzfHxkZWxpY2lvdXMlMjBzdHJlZXQlMjB0YWNvc3xlbnwwfHx8fDE3NzcyNTA2MTh8MA&ixlib=rb-4.1.0&q=85"
+    }
+  }
+}
